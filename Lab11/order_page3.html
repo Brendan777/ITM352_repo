@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Page</title>
+</head>
+
+<body>
+    <!-- note the addition of processOrder function -->
+    <form name="qty_form" action="display_products.html" method="GET">
+        <label for="qty_textbox">Quantity Desired:</label>
+        <input type="text" name="qty_textbox">
+        <span id="qty_textbox_message">Enter a quantity</span>
+        
+        <br><br>
+        
+        <input type="submit" value="Purchase">
+    </form>
+
+    <div id="purchaseResult"></div>
+
+    <script src="order3.js"></script>
+</body>
+
+</html>
+
