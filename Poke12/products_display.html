@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Smart Phone Store</title>
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Raleway" rel="stylesheet">
+    <link href="products-style.css" rel="stylesheet">
+    <script src="./products_data.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Port's Used Smart Phone Store</h1>
+    </header>
+    <div>
+        <aside>
+            <div style="font-size:4rem;text-align:center;font-weight: bold;font-style: italic; color: white">
+                We sell from around the globe!
+            </div>
+        </aside>
+        <main>
+            <!-- Start of the phone selection form which will send the data to invoice.html -->
+<form id="phoneForm" action="./invoice.html" method="GET">
+
+    <!-- Input field for selecting the quantity of HTC phones. Default value is set to 0. -->
+    HTC: 
+    <input type="number" id="htcQty" name="htcQty" min="0" value="0"> 
+    Price: $40<br>
+
+    <!-- Input field for selecting the quantity of Apple phones. Default value is set to 0. -->
+    Apple: 
+    <input type="number" id="appleQty" name="appleQty" min="0" value="0"> 
+    Price: $75<br>
+
+    <!-- Input field for selecting the quantity of Samsung phones. Default value is set to 0. -->
+    Samsung: 
+    <input type="number" id="samsungQty" name="samsungQty" min="0" value="0"> 
+    Price: $45<br>
+
+    <!-- Input field for selecting the quantity of Blackberry phones. Default value is set to 0. -->
+    Blackberry: 
+    <input type="number" id="blackberryQty" name="blackberryQty" min="0" value="0"> 
+    Price: $10<br>
+
+    <!-- Purchase button to submit the form and send the user to the invoice page with the selected quantities. -->
+    <button type="submit" id="purchaseButton">Purchase</button>
+</form>
+<!-- End of the phone selection form -->
+
+            <table id="invoiceTable"></table>
+            <section class="item" id="HTC">
+                <h2><script>document.write(name1)</script></h2>
+                <p>$<script>document.write(price1)</script></p>
+                <img id="image1_id"><script>document.getElementById("image1_id").src = image1;</script>
+            </section>
+
+            <section class="item">
+                <h2><script>document.write(name2)</script></h2>
+                <p>$<script>document.write(price2)</script></p>
+                <img id="image2_id"><script>document.getElementById("image2_id").src = image2;</script>
+            </section>
+
+            <section class="item">
+                <h2><script>document.write(name3)</script></h2>
+                <p>$<script>document.write(price3)</script></p>
+                <img id="image3_id"><script>document.getElementById("image3_id").src = image3;</script>
+            </section>
+
+            <section class="item">
+                <h2><script>document.write(name4)</script></h2>
+                <p>$<script>document.write(price4)</script></p>
+                <img id="image4_id"><script>document.getElementById("image4_id").src = image4;</script>
+            </section>
+
+            <section class="item">
+                <h2><script>document.write(name5)</script></h2>
+                <p>$<script>document.write(price5)</script></p>
+                <img id="image5_id"><script>document.getElementById("image5_id").src = image5;</script>
+
+        </main>
+    </div>
+    <footer>
+        <h1>Your One Stop For Used Phones</h1>
+    </footer>
+    <script src="invoice.js"></script>
+</body>
+</html>
